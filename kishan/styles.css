@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.sidebar {
+    height: 500vh;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.content {
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+}
+
+.main {
+    margin-top: 20px;
+    display: flex;
+    margin-left: 10px;
+}
+.nav-item :hover{
+    background-color: red;
+    color: black;
+}
+#km{
+    margin-top: 100px;
+    width: 100%;
+    height: 200px;
+}
+#ki{
+    color: white;
+}

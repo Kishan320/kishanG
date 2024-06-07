@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="d-flex">
+        <div class="sidebar bg-dark text-white p-3" id="klj">
+            <h2 class="text-center">Dashboard</h2>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="kishan1.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="service.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="client.html">Clients</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content flex-grow-1">
+            <div class="header bg-dark p-3" id="ki">
+                <h2 class="text-center">Cartoon Contact</h2>
+            </div>
+            <div class="main mt-3 p-3">
+                <div class="container contact-container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="contact-form">
+                                <h2 class="text-center">Contact Us</h2>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subject">Subject</label>
+                                        <input type="text" class="form-control" id="subject" placeholder="Enter subject">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">Message</label>
+                                        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block" onclick="return myfun()">Send Message</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Information Section -->
+                    <div class="row contact-info bg-dark text-white p-3" id="km">
+                        <div class="col-md-6">
+                            <h5>Office Address</h5>
+                            <p>123 Cartoon Lane, Animation City, AC 45678</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Contact Information</h5>
+                            <p>Email: kishansavaliya262@gmail.com</p>
+                            <p>Phone: 9106078480</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myfun()
+        {
+            if(document.getElementById("name").value == ""){
+                alert("invalid name");
+                return false;
+            }
+            if(document.getElementById("email").value == ""){
+                alert("invalid email");
+                return false;
+            }
+            if(document.getElementById("subject").value == ""){
+                alert("invalid subject");
+                return false;
+            }
+            if(document.getElementById("message").value == ""){
+                alert("invalid message");
+                return false;
+            }
+            window.location.href = "kishan1.html";
+            return false;
+        }
+    </script>
+</body>
+
+</html>
